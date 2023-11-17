@@ -29,4 +29,17 @@ class ParticipentPicker:
         currentParticipent.hasWichtel = True 
         p.wasPicked = True
         return p
+    
+    def getRandomParticipentAsFailureTest(self, currentParticipent):
+        while True:
+            p = p = self.getRandomParticipent()
 
+            if (p.getWasPicked() == True):
+                continue
+
+            break
+
+        currentParticipent.hasWichtel = True 
+        p.wasPicked = True
+        return p
+    
