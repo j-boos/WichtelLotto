@@ -35,6 +35,9 @@ class ParticipentManager:
     def getParticipentList(self):
         return self.__participentList
     
+    def clearParticipentList(self):
+        self.__participentList.clear()
+    
     def getNumOfParticipent(self):
         return len(self.__participentList)
 
